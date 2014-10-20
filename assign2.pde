@@ -180,27 +180,27 @@ gameState = FROG_DIE;
 void keyPressed() { 
     //println("keyCode=",keyCode);
     if (keyCode == 37) {
-        frogX -= 23;
+        frogX -= 32;
         if(frogX<=0){
           frogX=0;}
         //println("key=", keyCode, "frogX=",frogX, "frogY=",frogY);
     }
     if (keyCode == 38) {
       
-      frogY -= 23;
+      frogY -= 32;
       if(frogY<=64&&gameState==GAME_RUN){
       gameState=GAME_WIN;}
       //println("key=", keyCode, "frogX=",frogX, "frogY=",frogY);
     }
     if (keyCode == 39) {
       
-      frogX += 23;
+      frogX += 32;
       if(frogX>=610){
           frogX=610;}
       //println("key=", keyCode, "frogX=",frogX, "frogY=",frogY);
     }
     if (keyCode == 40) {
-      frogY += 23;
+      frogY += 32;
       if(frogY>=450){
       frogY=450;}
       //println("key=", keyCode, "frogX=",frogX, "frogY=",frogY);
